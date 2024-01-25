@@ -53,4 +53,10 @@ function renderQuestions() {
     questionsElement.appendChild(questionElement);
   }
 }
+
+let ans=document.getElementById('submit');
+ans.addEventListner('click',()=>{
+	let b= choiceElement.value;
+	localStorage.setItem("progress",b);
+})
 renderQuestions();
